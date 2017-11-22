@@ -2,15 +2,6 @@
 
 using namespace std;
 
-int main() {
-	int bil[10];
-	for(int i = 0; i < 10; i ++) {
-		cin>>bil[i];
-	}
-	cout<<"Terkecil: "<<cekKecil<<endl;
-	cout<<"Terbesar: "<<cekBesar<<endl;
-}
-
 int cekKecil(int bil[i]) {
 	int kecil = bil[0];
 	for(int i = 0; i < 10; i++){
@@ -29,4 +20,13 @@ int cekBesar(int bil[i]) {
 		}
 	}
 	return besar;
+}
+
+int main() {
+	int bil[10];
+	for(int i = 0; i < 10; i ++) {
+		cin>>bil[i];
+	}
+	cout<<"Terkecil: "<<cekKecil<<endl;
+	cout<<"Terbesar: "<<cekBesar<<endl;
 }

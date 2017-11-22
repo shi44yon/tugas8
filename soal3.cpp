@@ -11,9 +11,9 @@ int main() {
 	cout<<"Your fibonacci numbers are: "<<endl;
 	for(int i = 0; i < n; i++) {
 		fibo[i] = awal;
+		cout<<fibo[i]<<endl;
 		awal += akhir;
 		akhir = fibo[i];
-		cout<<fibo[i]<<endl;
 	}
 	cout<<"Their average is: "<<endl;
 	for(int j = 0; j < n; j++) {
